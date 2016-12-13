@@ -1,0 +1,70 @@
+/** This is the external stylesheet that would be attached in the HTML file like so: **/
+/** <link rel="stylesheet" type="text/css" href="/PATH/TO/CSS/FILE"> **/
+
+    #nav {
+      background-color: #e3e3e0;
+      width: 100%;
+      height: 40px;
+    }
+    
+    ul.nav-drop a {
+        display: block;
+        color: #414b56;
+        font-size: 15px;
+        text-decoration: none;
+        background-color: #e3e3e0;
+        color: #367d31;
+    }
+    
+    ul.nav-drop a:hover {
+        color: #76B900;
+    }
+    
+    ul.nav-drop, ul.nav-drop li, ul.nav-drop ul {
+        list-style:none;
+        margin: 0;
+        color: #414b56;
+        letter-spacing: 0.1em;
+        font-size: 15px;
+    }
+    
+    ul.nav-drop {
+        position: relative;
+        z-index: 597;
+        float: left;
+    }
+    
+    ul.nav-drop li {
+        float: left;
+        padding: 10px 25px;
+        background-color: #e3e3e0;
+    }
+    
+    ul.nav-drop li:hover, ul.nav-drop li.hover {
+        position: relative;
+        z-index: 599;
+        cursor: default;
+    }
+    
+    ul.nav-drop ul {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 598;
+        width: 237px;
+        border-bottom: 1px solid #414b56;
+    }
+    
+    ul.nav-drop ul li {
+        float: none;
+    }
+    
+    ul.nav-drop ul ul {
+        top: -2px;
+        left: 100%;
+    }
+    
+    ul.nav-drop li:hover > ul {
+        visibility: visible;
+    }

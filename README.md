@@ -1,2 +1,2 @@
 # dropdown-menu
-Creating simple drop down in a nav bar
+Create a simple drop down menu in a horizontal navigation bar, using HTML and CSS.
